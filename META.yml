@@ -1,6 +1,6 @@
 ---
 name: Chart-OFC
-version: 0.01
+version: 0.02
 author:
   - 'Dave Rolsky, C<< <autarch@urth.org> >>'
 abstract: Generate data files for use with Open Flash Chart
@@ -17,7 +17,7 @@ build_requires:
 provides:
   Chart::OFC:
     file: lib/Chart/OFC.pm
-    version: 0.01
+    version: 0.02
   Chart::OFC::Axis:
     file: lib/Chart/OFC/Axis.pm
   Chart::OFC::AxisLabel:
@@ -52,8 +52,6 @@ provides:
     file: lib/Chart/OFC/XAxis.pm
   Chart::OFC::YAxis:
     file: lib/Chart/OFC/YAxis.pm
-  Graphics::ColorNames:
-    file: lib/Chart/OFC/Types.pm
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
