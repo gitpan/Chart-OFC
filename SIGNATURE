@@ -1,0 +1,69 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.55.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 664702e61413bf6c015ee2b072e3581cb90fd30c Build.PL
+SHA1 7100a96fba0986974feda8c3dc0353719c08a458 Changes
+SHA1 b391536af4a5c34366f022b322119d40c73e3dd4 LICENSE
+SHA1 579887fbf94830670fcd9c637f7d0abd213286b2 MANIFEST
+SHA1 7eaaecad9f6ff7d68d148a6f81f70bcd936421a2 META.yml
+SHA1 cd14ada78fb37a0d926edd86eddcdf7f939de582 Makefile.PL
+SHA1 f7e3fb526e873b0fe85ab06b9132f260c14973d7 README
+SHA1 030cda74fffc68e27758ad6064fe7c8a403c4373 lib/Chart/OFC.pm
+SHA1 314b4f6965804a78d8e493cecf0c736994647a54 lib/Chart/OFC/Axis.pm
+SHA1 8c2314a185469e8b58f007d7509337cbad1d53ee lib/Chart/OFC/AxisLabel.pm
+SHA1 7b78fba98552ca436acf6a4082966becafe5bd41 lib/Chart/OFC/Dataset.pm
+SHA1 1b3acef39de1dbe482b0937e2f3eb9e0e9eff158 lib/Chart/OFC/Dataset/3DBar.pm
+SHA1 cdde16588f55b052735a17ce327176fe3ff5775f lib/Chart/OFC/Dataset/Area.pm
+SHA1 271054ebfaa369ef548e87c4e425770b61ad082b lib/Chart/OFC/Dataset/Bar.pm
+SHA1 79e00a7c019de9d8b884d23c228370559ce69771 lib/Chart/OFC/Dataset/FadeBar.pm
+SHA1 a69a5f35c282af060cd5ebcc5e8d4465225c0819 lib/Chart/OFC/Dataset/GlassBar.pm
+SHA1 c84c4c80689c524a956ff9d8562754762ff53313 lib/Chart/OFC/Dataset/Line.pm
+SHA1 cc1242eae7cabdcc4440e2c2974bc44204c8001d lib/Chart/OFC/Dataset/LineWithDots.pm
+SHA1 7d7c9b11c7903a8a485e14e6a03359af4b89e2f6 lib/Chart/OFC/Dataset/OutlinedBar.pm
+SHA1 910bb62603418693beef8801ffaadab2b5813803 lib/Chart/OFC/Grid.pm
+SHA1 fc0a534d8ad18afb8a2b4ca08d6cc548e50c7b29 lib/Chart/OFC/Pie.pm
+SHA1 8e1948aa15544dffe25e48f439fed1dc4486bc06 lib/Chart/OFC/Role/OFCDataLines.pm
+SHA1 f24158957d91865a718f96860a01bc351acbcb3a lib/Chart/OFC/Types.pm
+SHA1 473d50d2c5d01d22d524cfc3ed7fba6429d17aff lib/Chart/OFC/XAxis.pm
+SHA1 ca47dfb19de6728dd7c4a4a1b0f78f0b3596aa04 lib/Chart/OFC/YAxis.pm
+SHA1 795260d4323db5a7aea319b705af50e179088981 ofc/LICENSE
+SHA1 1076780e4b72b4928e3c5b75f4f5eba472fbc4e5 ofc/open-flash-chart-1.9.5.zip
+SHA1 e0f5c2f8372aafecfe329fdfcafa6fe5ec20adb1 t/AxisLabel.t
+SHA1 782f6486e05347605dae33172205a41062c9d23b t/Dataset.t
+SHA1 abd1755e56a6faa631a80afbed554eff060cfb24 t/Dataset/3DBar.t
+SHA1 47f1175755ee2731e2053c419d79c8c5b62f7c76 t/Dataset/Area.t
+SHA1 c844c41d5b7221c891577f6bf347a774ae04df86 t/Dataset/Bar.t
+SHA1 1d0c0c004045b4fa43a8c498d7be45c0059308cb t/Dataset/FadeBar.t
+SHA1 f3bebfa1d4bf5690026b2f68ca1deb0a54bf766a t/Dataset/GlassBar.t
+SHA1 e54ac93c99fda3992a8ba3ce505e4cf3af69d586 t/Dataset/Line.t
+SHA1 b5f632f164b42f60bed8f6bb4b2e57babe51fd2f t/Dataset/LineWithDots.t
+SHA1 2257fb0ce2cbc8b334cbb4b8479f4a73ca538895 t/Dataset/OutlinedBar.t
+SHA1 8c7413bfac43e060df673069c006cb39fed6e9ef t/Grid-mixed.t
+SHA1 3168e420f21b72b1fa31869e593c578dcc881bc0 t/Grid.t
+SHA1 d1bf28dd9460e24f97ecf1adca9c42dd33f86235 t/OFC.t
+SHA1 27b7806488245722413e41dd039f08cc976399ba t/Pie.t
+SHA1 136e80bcb3c53426bd74af382deeb8d7d7aa3dd4 t/XAxis.t
+SHA1 d63b93004c7320ee9c693c78c7723ab9b10c921c t/YAxis.t
+SHA1 98c875c39bedc57bc3c52b583ddc866c6d184d0a t/perlcritic.t
+SHA1 7e6712a9238d2ddbc230e20fb86b6e691efb4ca8 t/pod-coverage.t
+SHA1 cec881e89926d320475f9de2b7fad02c2169f510 t/pod.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFHPgDa3Or3ZzQuifMRApNHAKDHaZdx55zGyDd/MHPAc2RWJp3RKACghA1E
+gOkEHGU1abm9rkBi5aKs8GA=
+=Xnsb
+-----END PGP SIGNATURE-----
