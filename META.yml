@@ -1,6 +1,6 @@
 ---
 name: Chart-OFC
-version: 0.02
+version: 0.03
 author:
   - 'Dave Rolsky, C<< <autarch@urth.org> >>'
 abstract: Generate data files for use with Open Flash Chart
@@ -9,15 +9,15 @@ resources:
   license: http://dev.perl.org/licenses/
 requires:
   Graphics::ColorNames: 0
+  List::MoreUtils: 0
   Moose: 0
   MooseX::StrictConstructor: 0.02
-  MooseX::Types: 0
 build_requires:
   Test::More: 0
 provides:
   Chart::OFC:
     file: lib/Chart/OFC.pm
-    version: 0.02
+    version: 0.03
   Chart::OFC::Axis:
     file: lib/Chart/OFC/Axis.pm
   Chart::OFC::AxisLabel:
