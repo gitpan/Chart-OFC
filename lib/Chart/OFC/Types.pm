@@ -37,6 +37,12 @@ subtype 'NonEmptyArrayRef'
         => where { return 0 if any { ! $constraint->check($_) } @{ $_ };
                    return 1; }
         => message { 'array reference cannot be empty' };
+
+    subtype 'NonEmptyArrayRefOfNumsOrUndefs'
+        => as 'NonEmptyArrayRef',
+        => where { return 0 if any { defined && ! $constraint->check($_) } @{ $_ };
+                   return 1; }
+        => message { 'array reference cannot be empty and must contain numbers or undef' };
 }
 
 {
@@ -100,6 +106,11 @@ subtype 'PosInt'
     => where  { $_ > 0 }
     => message { 'must be a positive integer' };
 
+subtype 'PosOrZeroInt'
+    => as 'Int'
+    => where  { $_ >= 0 }
+    => message { 'must be an integer greater than or equal to zero' };
+
 subtype 'Size'
     => as 'PosInt';
 
@@ -124,6 +135,7 @@ enum 'Orientation' => qw( horizontal vertical diagonal );
     }
 }
 
+no Moose::Util::TypeConstraints;
 
 1;
 

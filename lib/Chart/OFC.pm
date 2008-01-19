@@ -3,7 +3,7 @@ package Chart::OFC;
 use strict;
 use warnings;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 use MooseX::StrictConstructor;
 use Chart::OFC::Types;
@@ -36,10 +36,6 @@ has bg_color =>
       optional  => 1,
       predicate => '_has_bg_color',
     );
-
-no Moose;
-__PACKAGE__->meta()->make_immutable();
-
 
 {
     my $CRLF = "\r\n";
@@ -94,6 +90,8 @@ require Chart::OFC::Dataset::GlassBar;
 require Chart::OFC::Dataset::Line;
 require Chart::OFC::Dataset::LineWithDots;
 
+no Moose;
+__PACKAGE__->meta()->make_immutable();
 
 1;
 
@@ -170,8 +168,10 @@ used with pie charts.
 
 =item * Chart::OFC::Dataset::3DBar
 
-Formats your data as a set of bars. There are many variations on the
-look of the bars.
+=item * Chart::OFC::Dataset::SketchBar
+
+Formats your data as a set of bars. There are many different styles of
+bars.
 
 =item * Chart::OFC::Dataset::Line
 

@@ -15,12 +15,10 @@ has 'values' =>
       auto_deref => 1,
     );
 
-no Moose;
-__PACKAGE__->meta()->make_immutable();
-
-
 sub _ofc_data_lines { die 'This is a virtual method' }
 
+no Moose;
+__PACKAGE__->meta()->make_immutable();
 
 1;
 
@@ -41,9 +39,6 @@ Chart::OFC::Dataset - A set of values to be charted
 
 This class represents a set of values that will be charted along the X
 axis of a chart (or as pie slices).
-
-It is a subclass of C<Chart::OFC::Bar> and accepts all of that class's
-attributes as well as its own.
 
 =head1 ATTRIBUTES
 

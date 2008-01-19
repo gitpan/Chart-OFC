@@ -8,6 +8,15 @@ use Chart::OFC::Types;
 
 extends 'Chart::OFC::Dataset';
 
+# Cannot do has '+values' because the new type is not a subtype of the
+# type in the parent class.
+has 'values' =>
+    ( is         => 'ro',
+      isa        => 'NonEmptyArrayRefOfNumsOrUndefs',
+      required   => 1,
+      auto_deref => 1,
+    );
+
 has width =>
     ( is      => 'ro',
       isa     => 'PosInt',
@@ -32,11 +41,6 @@ has text_size =>
       isa     => 'Size',
       default => 10,
     );
-
-
-no Moose;
-__PACKAGE__->meta()->make_immutable();
-
 
 sub type
 {
@@ -73,6 +77,8 @@ sub _line_parameters
     return @p;
 }
 
+no Moose;
+__PACKAGE__->meta()->make_immutable();
 
 1;
 
@@ -104,6 +110,11 @@ method.
 
 It is a subclass of C<Chart::OFC::Dataset> and accepts all of that
 class's attributes as well as its own.
+
+=head2 values
+
+For this class, the values array may contain some undefined
+values. These are simply skipped in the resulting chart.
 
 =head2 width
 

@@ -1,6 +1,6 @@
 ---
 name: Chart-OFC
-version: 0.03
+version: 0.04
 author:
   - 'Dave Rolsky, C<< <autarch@urth.org> >>'
 abstract: Generate data files for use with Open Flash Chart
@@ -17,7 +17,7 @@ build_requires:
 provides:
   Chart::OFC:
     file: lib/Chart/OFC.pm
-    version: 0.03
+    version: 0.04
   Chart::OFC::Axis:
     file: lib/Chart/OFC/Axis.pm
   Chart::OFC::AxisLabel:
@@ -40,6 +40,8 @@ provides:
     file: lib/Chart/OFC/Dataset/LineWithDots.pm
   Chart::OFC::Dataset::OutlinedBar:
     file: lib/Chart/OFC/Dataset/OutlinedBar.pm
+  Chart::OFC::Dataset::SketchBar:
+    file: lib/Chart/OFC/Dataset/SketchBar.pm
   Chart::OFC::Grid:
     file: lib/Chart/OFC/Grid.pm
   Chart::OFC::Pie:
