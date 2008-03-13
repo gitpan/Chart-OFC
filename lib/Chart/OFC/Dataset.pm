@@ -10,12 +10,54 @@ with 'Chart::OFC::Role::OFCDataLines';
 
 has 'values' =>
     ( is         => 'ro',
-      isa        => 'NonEmptyArrayRefOfNums',
+      isa        => 'Chart::OFC::Type::NonEmptyArrayRefOfNums',
       required   => 1,
       auto_deref => 1,
     );
 
-sub _ofc_data_lines { die 'This is a virtual method' }
+has 'links' =>
+    ( is         => 'ro',
+      isa        => 'Chart::OFC::Type::NonEmptyArrayRef',
+      required   => 0,
+      auto_deref => 1,
+      predicate  => 'has_links',
+    );
+
+sub _ofc_data_lines
+{
+    my $self  = shift;
+    my $count = shift;
+
+    my @lines;
+    if ( $self->can('type') )
+    {
+        my $name = $self->type();
+        $name .= q{_} . $count
+            if $count && $count > 1;
+
+        push @lines,
+            $self->_data_line( $name, $self->_parameters_for_type() );
+    }
+
+    my $val_name = 'values';
+    $val_name .= q{_} . $count
+        if $count && $count > 1;
+
+    push @lines,
+        $self->_data_line( $val_name, $self->values() );
+
+    if ( $self->has_links() )
+    {
+        my $links_name = 'links';
+        $links_name .= q{_} . $count
+            if $count && $count > 1;
+
+        push @lines, $self->_data_line( $links_name, $self->links() );
+    }
+
+    return @lines;
+}
+
 
 no Moose;
 __PACKAGE__->meta()->make_immutable();
@@ -47,10 +89,16 @@ method.
 
 =head2 values
 
-This should be an array reference containing one more numbers for the
-X axis of the chart.
+This should be an array reference containing one more numbers
+representing values to be plotted on the chart. On grid charts, these
+are plotted on the X axis.
 
 This attribute is required, and must contain at least one value.
+
+=head2 links
+
+This is an optional attribute which may be an array reference of
+links, one per value.
 
 =head1 ROLES
 
@@ -58,7 +106,7 @@ This class does the C<Chart::OFC::Role::OFCDataLines> role.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007 Dave Rolsky, All Rights Reserved.
+Copyright 2007-2008 Dave Rolsky, All Rights Reserved.
 
 This program is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

@@ -15,33 +15,33 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 76c269d054c12d5f0940ba25da3f4a593ac75d24 Build.PL
-SHA1 64782a4a9c0297818ad79c2a415fc04767a12d21 Changes
+SHA1 18d3535f5cbae6dbddab9f5be15c2139d323f8a7 Changes
 SHA1 b391536af4a5c34366f022b322119d40c73e3dd4 LICENSE
-SHA1 1b6ac643d16cb94bf2a922d2f8940bc7f0865a5b MANIFEST
-SHA1 31deb3fd27e0a4fb0b2a029ce976d7230b2f4065 META.yml
+SHA1 cf74ff10edeec070a591b0407765f6336a2c9b8b MANIFEST
+SHA1 ca8a7dcdb15ab1bddf3c3396130d49a9d3fc43d7 META.yml
 SHA1 cd14ada78fb37a0d926edd86eddcdf7f939de582 Makefile.PL
-SHA1 7895990a23e4ae6fbdbda128ec2d8db2513992ae README
-SHA1 121a7af9a5526681ca169122fdf29be266d0e41c lib/Chart/OFC.pm
-SHA1 5a21e0aa139e7280d264dbca860edd2d28b8c4f3 lib/Chart/OFC/Axis.pm
-SHA1 8fcf283c07c2095068d9ffc9bccfb0122bab8be5 lib/Chart/OFC/AxisLabel.pm
-SHA1 c3491c438d85e0330eb529090d1eefd59efd796b lib/Chart/OFC/Dataset.pm
-SHA1 3e321f0f2acf0e54286560c7b980a9e9bc70b50a lib/Chart/OFC/Dataset/3DBar.pm
-SHA1 ab7c5986567505c6e28b4d46b0501cd37db146b0 lib/Chart/OFC/Dataset/Area.pm
-SHA1 35a2f32b60572c1b243769930d3030148c2ec4fa lib/Chart/OFC/Dataset/Bar.pm
-SHA1 1065e34777738cbd53120c2ca8bf74a4bc2c102f lib/Chart/OFC/Dataset/FadeBar.pm
-SHA1 ad27347dfc1af5d10b1c18f448da011df473973f lib/Chart/OFC/Dataset/GlassBar.pm
-SHA1 59c1494719896dd0e51c7cbb4b69d23481163709 lib/Chart/OFC/Dataset/Line.pm
-SHA1 d34e21bba1151c620109c1fc131f5a8f689e3137 lib/Chart/OFC/Dataset/LineWithDots.pm
-SHA1 b25766afc9130cc31d72fd915557352ce8fe9fcd lib/Chart/OFC/Dataset/OutlinedBar.pm
-SHA1 5fab7d847a9604db5507e8273e6bce2b5a9104d4 lib/Chart/OFC/Dataset/SketchBar.pm
-SHA1 486cdad020e56fdaf79d2f95789d32b00dd68a41 lib/Chart/OFC/Grid.pm
-SHA1 5bf4c8399c1bf523f833c884ec8761edc8c81794 lib/Chart/OFC/Pie.pm
-SHA1 18357a880046d6d7b4711ea1ae3fc1ad007fd14b lib/Chart/OFC/Role/OFCDataLines.pm
-SHA1 6a5ca29b130eacc75ce4f5269985fc5ae780711b lib/Chart/OFC/Types.pm
-SHA1 6d083b52ea370640bc18dcadbea442ebf9cbd261 lib/Chart/OFC/XAxis.pm
-SHA1 3cc94e6311cd2687f501f6a5b1a52ca152fea799 lib/Chart/OFC/YAxis.pm
-SHA1 795260d4323db5a7aea319b705af50e179088981 ofc/LICENSE
-SHA1 93e8386f26f95aa1d304fba88c5916a6488de057 ofc/open-flash-chart-1.9.6.zip
+SHA1 e425711246c4dce3ee466aa165e1dcdb262f323a README
+SHA1 9012ff7ee58712590618c2052a9380e4f98ca72a lib/Chart/OFC.pm
+SHA1 e1a302b1e7ce95669c319d311f68f19f270b2b97 lib/Chart/OFC/Axis.pm
+SHA1 6d8a4a1d54122fe6fc04348d466593bd158a9945 lib/Chart/OFC/AxisLabel.pm
+SHA1 0d4723bc5c254504415def3975e3be77854bf9f1 lib/Chart/OFC/Dataset.pm
+SHA1 2cdf225903dd8a75d7beb5a92053a0fd492e8c40 lib/Chart/OFC/Dataset/3DBar.pm
+SHA1 ed4aaefb4c0ad2d0d025921a4e81dbafff806416 lib/Chart/OFC/Dataset/Area.pm
+SHA1 36967546384cda09c4c7ba0356be04f74306860b lib/Chart/OFC/Dataset/Bar.pm
+SHA1 10e884eb0b36798d79d07fa02371f8e2aca2eecc lib/Chart/OFC/Dataset/FadeBar.pm
+SHA1 c61ae3c0f7734a1cabca9f4d4b523b6cb15a89cf lib/Chart/OFC/Dataset/GlassBar.pm
+SHA1 6b75d2c85f7611933e30a9ea1bce053a62fb4878 lib/Chart/OFC/Dataset/Line.pm
+SHA1 32adfe11c240a55df857630614403c8534262436 lib/Chart/OFC/Dataset/LineWithDots.pm
+SHA1 ff8b24e52c59058aa086f9d9c584acf62f4e2d2d lib/Chart/OFC/Dataset/OutlinedBar.pm
+SHA1 6f4e09f26b9f75cc29b19c7c780f51703c937b28 lib/Chart/OFC/Dataset/SketchBar.pm
+SHA1 4c2af6530ac6f291a137bbb334d1d726217869a8 lib/Chart/OFC/Grid.pm
+SHA1 60c11f9d3566e197d53ef69827b859beaa865625 lib/Chart/OFC/Pie.pm
+SHA1 440566f98359870cefdb14184555668d8e12769f lib/Chart/OFC/Role/OFCDataLines.pm
+SHA1 907c3ac57b0e3bd9499ed0408799548f7c3b2575 lib/Chart/OFC/Types.pm
+SHA1 22f2ce94bcda49c0aaad217e6a27930a2bb9565d lib/Chart/OFC/XAxis.pm
+SHA1 4efa4dcee1835b9960a0e2ad684184bff94269d7 lib/Chart/OFC/YAxis.pm
+SHA1 e0a9a775f4f8d0308f3057182a965f98225a9b0d ofc/LICENSE
+SHA1 7d3ab09200bd5383d2c5d0530fadf4f9f6e9550e ofc/open-flash-chart-1.9.7.zip
 SHA1 691bfa363f79af0710d71597942d40837e399a31 t/AxisLabel.t
 SHA1 fc84182cae0c644b00b209f9b06d72c9e83c74fe t/Dataset.t
 SHA1 abd1755e56a6faa631a80afbed554eff060cfb24 t/Dataset/3DBar.t
@@ -49,14 +49,14 @@ SHA1 47f1175755ee2731e2053c419d79c8c5b62f7c76 t/Dataset/Area.t
 SHA1 a86a69632c2685ce6960a47d8493470b17255b75 t/Dataset/Bar.t
 SHA1 1d0c0c004045b4fa43a8c498d7be45c0059308cb t/Dataset/FadeBar.t
 SHA1 f3bebfa1d4bf5690026b2f68ca1deb0a54bf766a t/Dataset/GlassBar.t
-SHA1 3c77ee6e62724165af8365fe9ece619bbe7011b7 t/Dataset/Line.t
+SHA1 fb09fbe08ca39c98781713659fe0f8383df4c1be t/Dataset/Line.t
 SHA1 b5f632f164b42f60bed8f6bb4b2e57babe51fd2f t/Dataset/LineWithDots.t
 SHA1 2257fb0ce2cbc8b334cbb4b8479f4a73ca538895 t/Dataset/OutlinedBar.t
 SHA1 c8b20d9d76ccd72ce8830698a1bc80720bcc674c t/Dataset/SketchBar.t
 SHA1 8c7413bfac43e060df673069c006cb39fed6e9ef t/Grid-mixed.t
 SHA1 37cf3293d9d75a4acf5afa280768517dede30eee t/Grid.t
 SHA1 d1bf28dd9460e24f97ecf1adca9c42dd33f86235 t/OFC.t
-SHA1 f68cfc6cd99b71d692240b00c7f9ef6ae1d53448 t/Pie.t
+SHA1 50f63af6d3989375cf4dfdbf74cac2a14bc44f61 t/Pie.t
 SHA1 db04f4af0f8df7a99f6ce02b99aa0914570b0706 t/XAxis.t
 SHA1 d63b93004c7320ee9c693c78c7723ab9b10c921c t/YAxis.t
 SHA1 9ade2293d6e5ea77d94532132c89cd205ea85ed7 t/kwalitee.t
@@ -66,7 +66,7 @@ SHA1 cec881e89926d320475f9de2b7fad02c2169f510 t/pod.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.6 (GNU/Linux)
 
-iD8DBQFHwbQG3Or3ZzQuifMRAv/kAKDwlTdsgw/P09obSBQtYR0bDh2m+wCg3xy1
-9aubpkS2Pbibad2BG3PNBQ0=
-=nMqX
+iD8DBQFH2Yj73Or3ZzQuifMRAgqbAKDQ8KuG9YDOTqAP46A0/WRZApArkwCgke+o
+KlvNuXBwa1roU9TbV61CfJE=
+=m8mj
 -----END PGP SIGNATURE-----

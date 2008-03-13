@@ -10,7 +10,7 @@ extends 'Chart::OFC::Dataset::Bar';
 
 has outline_color =>
     ( is      => 'ro',
-      isa     => 'Color',
+      isa     => 'Chart::OFC::Type::Color',
       coerce  => 1,
       default => '#000000',
     );
@@ -20,7 +20,7 @@ sub type
     return 'filled_bar';
 }
 
-sub _bar_parameters
+sub _parameters_for_type
 {
     my $self = shift;
 
@@ -75,7 +75,7 @@ This class does the C<Chart::OFC::Role::OFCDataLines> role.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007 Dave Rolsky, All Rights Reserved.
+Copyright 2007-2008 Dave Rolsky, All Rights Reserved.
 
 This program is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

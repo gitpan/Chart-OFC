@@ -10,7 +10,7 @@ extends 'Chart::OFC::Dataset::OutlinedBar';
 
 has randomness =>
     ( is      => 'ro',
-      isa     => 'PosOrZeroInt',
+      isa     => 'Chart::OFC::Type::PosOrZeroInt',
       default => '3',
     );
 
@@ -19,7 +19,7 @@ sub type
     return 'bar_sketch';
 }
 
-sub _bar_parameters
+sub _parameters_for_type
 {
     my $self = shift;
 
@@ -76,7 +76,7 @@ This class does the C<Chart::OFC::Role::OFCDataLines> role.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007 Dave Rolsky, All Rights Reserved.
+Copyright 2007-2008 Dave Rolsky, All Rights Reserved.
 
 This program is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

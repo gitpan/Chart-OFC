@@ -10,19 +10,19 @@ extends 'Chart::OFC::Dataset::Line';
 
 has dot_size =>
     ( is      => 'ro',
-      isa     => 'PosInt',
+      isa     => 'Chart::OFC::Type::PosInt',
       default => 5,
     );
 
 has opacity =>
     ( is         => 'ro',
-      isa        => 'Opacity',
+      isa        => 'Chart::OFC::Type::Opacity',
       default    => '80',
     );
 
 has fill_color =>
     ( is        => 'ro',
-      isa       => 'Color',
+      isa       => 'Chart::OFC::Type::Color',
       coerce    => 1,
       predicate => '_has_fill_color',
     );
@@ -32,7 +32,7 @@ sub type
     return 'area_hollow';
 }
 
-sub _line_parameters
+sub _parameters_for_type
 {
     my $self = shift;
 
@@ -111,7 +111,7 @@ This class does the C<Chart::OFC::Role::OFCDataLines> role.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007 Dave Rolsky, All Rights Reserved.
+Copyright 2007-2008 Dave Rolsky, All Rights Reserved.
 
 This program is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

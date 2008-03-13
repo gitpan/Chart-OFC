@@ -11,31 +11,31 @@ extends 'Chart::OFC::Axis';
 
 has labels =>
     ( is        => 'ro',
-      isa       => 'NonEmptyArrayRef',
+      isa       => 'Chart::OFC::Type::NonEmptyArrayRef',
       predicate => '_has_labels',
     );
 
 has label_steps =>
     ( is      => 'ro',
-      isa     => 'PosInt',
+      isa     => 'Chart::OFC::Type::PosInt',
       default => 1,
     );
 
 has tick_steps =>
     ( is        => 'ro',
-      isa       => 'PosInt',
+      isa       => 'Chart::OFC::Type::PosInt',
       predicate => '_has_tick_steps',
     );
 
 has three_d_height =>
     ( is        => 'ro',
-      isa       => 'PosInt',
+      isa       => 'Chart::OFC::Type::PosInt',
       predicate => '_has_three_d_height',
     );
 
 has orientation =>
     ( is      => 'ro',
-      isa     => 'Orientation',
+      isa     => 'Chart::OFC::Type::Orientation',
       default => 'horizontal',
     );
 
@@ -138,7 +138,7 @@ This class does the C<Chart::OFC::Role::OFCDataLines> role.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007 Dave Rolsky, All Rights Reserved.
+Copyright 2007-2008 Dave Rolsky, All Rights Reserved.
 
 This program is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

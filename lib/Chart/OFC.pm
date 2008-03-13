@@ -3,7 +3,7 @@ package Chart::OFC;
 use strict;
 use warnings;
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 use MooseX::StrictConstructor;
 use Chart::OFC::Types;
@@ -31,7 +31,7 @@ has tool_tip =>
 
 has bg_color =>
     ( is        => 'ro',
-      isa       => 'Color',
+      isa       => 'Chart::OFC::Type::Color',
       coerce    => 1,
       optional  => 1,
       predicate => '_has_bg_color',
@@ -133,7 +133,7 @@ need to embed the OFC flash in something and feed it the data to
 actually make a chart. This library does not generate Flash or HTML or
 anything like that.
 
-This library was tested with OFC 1.9.5, and follows the format defined
+This library was tested with OFC 1.9.7, and follows the format defined
 for that version. The OFC zip file is included in this distribution's
 tarball, under the F<ofc> directory.
 
@@ -295,7 +295,7 @@ automatically be notified of progress on your bug as I make changes.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007 Dave Rolsky, All Rights Reserved.
+Copyright 2007-2008 Dave Rolsky, All Rights Reserved.
 
 This program is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

@@ -10,13 +10,13 @@ extends 'Chart::OFC::Dataset';
 
 has opacity =>
     ( is         => 'ro',
-      isa        => 'Opacity',
+      isa        => 'Chart::OFC::Type::Opacity',
       default    => '80',
     );
 
 has fill_color =>
     ( is      => 'ro',
-      isa     => 'Color',
+      isa     => 'Chart::OFC::Type::Color',
       coerce  => 1,
       default => '#999999',
     );
@@ -29,7 +29,7 @@ has label =>
 
 has text_size =>
     ( is      => 'ro',
-      isa     => 'Size',
+      isa     => 'Chart::OFC::Type::Size',
       default => 10,
     );
 
@@ -38,26 +38,7 @@ sub type
     return 'bar';
 }
 
-sub _ofc_data_lines
-{
-    my $self  = shift;
-    my $count = shift;
-
-    my $name = $self->type();
-    $name .= q{_} . $count
-        if $count && $count > 1;
-
-    my $val_name = 'values';
-    $val_name .= q{_} . $count
-        if $count && $count > 1;
-
-    return
-        ( $self->_data_line( $name, $self->_bar_parameters() ),
-          $self->_data_line( $val_name, $self->values() ),
-        );
-}
-
-sub _bar_parameters
+sub _parameters_for_type
 {
     my $self = shift;
 
@@ -137,7 +118,7 @@ This class does the C<Chart::OFC::Role::OFCDataLines> role.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007 Dave Rolsky, All Rights Reserved.
+Copyright 2007-2008 Dave Rolsky, All Rights Reserved.
 
 This program is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

@@ -16,7 +16,7 @@ has dataset =>
 
 has slice_colors =>
     ( is         => 'ro',
-      isa        => 'NonEmptyArrayRefOfColors',
+      isa        => 'Chart::OFC::Type::NonEmptyArrayRefOfColors',
       coerce     => 1,
       lazy       => 1,
       default    => sub { [ qw( red blue green yellow orange purple black ) ] },
@@ -24,28 +24,28 @@ has slice_colors =>
 
 has line_color =>
     ( is         => 'ro',
-      isa        => 'Color',
+      isa        => 'Chart::OFC::Type::Color',
       coerce     => 1,
       default    => '#000000',
     );
 
 has 'labels' =>
     ( is         => 'ro',
-      isa        => 'NonEmptyArrayRef',
+      isa        => 'Chart::OFC::Type::NonEmptyArrayRef',
       required   => 1,
       auto_deref => 1,
     );
 
 has label_color =>
     ( is         => 'ro',
-      isa        => 'Color',
+      isa        => 'Chart::OFC::Type::Color',
       coerce     => 1,
       default    => '#000000',
     );
 
 has opacity =>
     ( is         => 'ro',
-      isa        => 'Opacity',
+      isa        => 'Chart::OFC::Type::Opacity',
       default    => '80',
     );
 
@@ -69,9 +69,9 @@ override _ofc_data_lines => sub
     return
         ( super(),
           $self->_data_line( 'pie', $self->opacity(), $self->line_color(), $self->label_color() ),
-          $self->_data_line( 'values', $self->dataset()->values() ),
           $self->_data_line( 'pie_labels', $self->labels() ),
           $self->_data_line( 'colours', @{ $self->slice_colors() } ),
+          $self->dataset()->_ofc_data_lines(),
         );
 };
 
@@ -152,7 +152,7 @@ This class does the C<Chart::OFC::Role::OFCDataLines> role.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007 Dave Rolsky, All Rights Reserved.
+Copyright 2007-2008 Dave Rolsky, All Rights Reserved.
 
 This program is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

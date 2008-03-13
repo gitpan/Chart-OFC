@@ -10,7 +10,7 @@ extends 'Chart::OFC';
 
 has datasets =>
     ( is       => 'ro',
-      isa      => 'NonEmptyArrayRefOfTypedDatasets',
+      isa      => 'Chart::OFC::Type::NonEmptyArrayRefOfTypedDatasets',
       required => 1,
     );
 
@@ -28,7 +28,7 @@ has y_axis =>
 
 has inner_bg_color =>
     ( is        => 'ro',
-      isa       => 'Color',
+      isa       => 'Chart::OFC::Type::Color',
       coerce    => 1,
       optional  => 1,
       predicate => '_has_inner_bg_color',
@@ -36,7 +36,7 @@ has inner_bg_color =>
 
 has inner_bg_color2 =>
     ( is        => 'ro',
-      isa       => 'Color',
+      isa       => 'Chart::OFC::Type::Color',
       coerce    => 1,
       optional  => 1,
       predicate => '_has_inner_bg_color2',
@@ -44,7 +44,7 @@ has inner_bg_color2 =>
 
 has inner_bg_fade_angle =>
     ( is        => 'ro',
-      isa       => 'Angle',
+      isa       => 'Chart::OFC::Type::Angle',
       optional  => 1,
       predicate => '_has_inner_bg_fade_angle',
     );
@@ -185,7 +185,7 @@ This class does the C<Chart::OFC::Role::OFCDataLines> role.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007 Dave Rolsky, All Rights Reserved.
+Copyright 2007-2008 Dave Rolsky, All Rights Reserved.
 
 This program is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

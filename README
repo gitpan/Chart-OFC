@@ -29,7 +29,7 @@ DESCRIPTION
     actually make a chart. This library does not generate Flash or HTML or
     anything like that.
 
-    This library was tested with OFC 1.9.5, and follows the format defined
+    This library was tested with OFC 1.9.7, and follows the format defined
     for that version. The OFC zip file is included in this distribution's
     tarball, under the ofc directory.
 
@@ -158,7 +158,7 @@ BUGS
     be notified of progress on your bug as I make changes.
 
 COPYRIGHT & LICENSE
-    Copyright 2007 Dave Rolsky, All Rights Reserved.
+    Copyright 2007-2008 Dave Rolsky, All Rights Reserved.
 
     This program is free software; you can redistribute it and/or modify it
     under the same terms as Perl itself.
