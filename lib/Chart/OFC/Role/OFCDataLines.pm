@@ -7,8 +7,7 @@ use Moose::Role;
 
 requires '_ofc_data_lines';
 
-
-sub _data_line ## no critic RequireArgUnpacking
+sub _data_line    ## no critic RequireArgUnpacking
 {
     my $self  = shift;
     my $label = shift;
@@ -17,10 +16,31 @@ sub _data_line ## no critic RequireArgUnpacking
     $label =~ s/color/colour/;
 
     my $line = q{&} . $label . q{=};
-    $line .= join ',', map { defined $_ ? $self->_escape($_) : 'null' } @vals;
+
+    $line .=
+        join ',', map { $self->_format_value($_) } @vals;
+
     $line .= q{&};
 
     return $line;
+}
+
+sub _format_value
+{
+    my $self  = shift;
+    my $value = shift;
+
+    return 'null' unless defined $value;
+
+    # nested array ref values attr for things like scatter charts
+    if ( ref $value eq 'ARRAY' )
+    {
+        return '[' . ( join ',', @{ $value } ) . ']';
+    }
+    else
+    {
+        return $self->_escape($value);
+    }
 }
 
 sub _escape
@@ -36,7 +56,6 @@ sub _escape
 no Moose::Role;
 
 1;
-
 
 __END__
 

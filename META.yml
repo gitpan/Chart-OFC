@@ -1,6 +1,6 @@
 ---
 name: Chart-OFC
-version: 0.07
+version: 0.08
 author:
   - 'Dave Rolsky, C<< <autarch@urth.org> >>'
 abstract: Generate data files for use with Open Flash Chart
@@ -10,14 +10,14 @@ resources:
 requires:
   Graphics::ColorNames: 0
   List::MoreUtils: 0
-  Moose: 0.38
-  MooseX::StrictConstructor: 0.02
+  Moose: 0.56
+  MooseX::StrictConstructor: 0.07
 build_requires:
   Test::More: 0
 provides:
   Chart::OFC:
     file: lib/Chart/OFC.pm
-    version: 0.07
+    version: 0.08
   Chart::OFC::Axis:
     file: lib/Chart/OFC/Axis.pm
   Chart::OFC::AxisLabel:
@@ -30,16 +30,22 @@ provides:
     file: lib/Chart/OFC/Dataset/Area.pm
   Chart::OFC::Dataset::Bar:
     file: lib/Chart/OFC/Dataset/Bar.pm
+  Chart::OFC::Dataset::Candle:
+    file: lib/Chart/OFC/Dataset/Candle.pm
   Chart::OFC::Dataset::FadeBar:
     file: lib/Chart/OFC/Dataset/FadeBar.pm
   Chart::OFC::Dataset::GlassBar:
     file: lib/Chart/OFC/Dataset/GlassBar.pm
+  Chart::OFC::Dataset::HighLowClose:
+    file: lib/Chart/OFC/Dataset/HighLowClose.pm
   Chart::OFC::Dataset::Line:
     file: lib/Chart/OFC/Dataset/Line.pm
   Chart::OFC::Dataset::LineWithDots:
     file: lib/Chart/OFC/Dataset/LineWithDots.pm
   Chart::OFC::Dataset::OutlinedBar:
     file: lib/Chart/OFC/Dataset/OutlinedBar.pm
+  Chart::OFC::Dataset::Scatter:
+    file: lib/Chart/OFC/Dataset/Scatter.pm
   Chart::OFC::Dataset::SketchBar:
     file: lib/Chart/OFC/Dataset/SketchBar.pm
   Chart::OFC::Grid:

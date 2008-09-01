@@ -4,8 +4,11 @@ NAME
 SYNOPSIS
         use Chart::OFC; # loads all the other classes
 
-        my $data = Chart::OFC::Dataset->new( values => [ 1..10 ] );
-        my $pie = Chart::OFC::Pie->new( title => 'Pie!', dataset => $set, labels => [ 'a'..'j' ] );
+        my $set = Chart::OFC::Dataset->new( values => [ 1..10 ] );
+        my $pie = Chart::OFC::Pie->new( title   => 'Pie!',
+                                        dataset => $set,
+                                        labels  => [ 'a'..'j' ],
+                                      );
 
         print $pie->as_ofc_data();
 
@@ -45,24 +48,34 @@ DESCRIPTION
 
     The dataset classes provided are:
 
-    * Chart::OFC::Dataset
+    *   Chart::OFC::Dataset
+
         The base class for all datasets. It has no formatting, and can only
         be used with pie charts.
 
-    * Chart::OFC::Dataset::Bar
-    * Chart::OFC::Dataset::FadeBar
-    * Chart::OFC::Dataset::OutlinedBar
-    * Chart::OFC::Dataset::GlassBar
-    * Chart::OFC::Dataset::3DBar
-    * Chart::OFC::Dataset::SketchBar
+    *   Chart::OFC::Dataset::Bar
+
+    *   Chart::OFC::Dataset::FadeBar
+
+    *   Chart::OFC::Dataset::OutlinedBar
+
+    *   Chart::OFC::Dataset::GlassBar
+
+    *   Chart::OFC::Dataset::3DBar
+
+    *   Chart::OFC::Dataset::SketchBar
+
         Formats your data as a set of bars. There are many different styles
         of bars.
 
-    * Chart::OFC::Dataset::Line
-    * Chart::OFC::Dataset::LineWithDots
+    *   Chart::OFC::Dataset::Line
+
+    *   Chart::OFC::Dataset::LineWithDots
+
         Formats your data as a line, with optional dots marking each value.
 
-    * Chart::OFC::Dataset::Area
+    *   Chart::OFC::Dataset::Area
+
         Like a line with dots, but this dataset also fills in the area
         between the line and the X axis with a color.
 

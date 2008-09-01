@@ -3,6 +3,7 @@ package Chart::OFC::Dataset::Area;
 use strict;
 use warnings;
 
+use Moose;
 use MooseX::StrictConstructor;
 use Chart::OFC::Types;
 
@@ -36,7 +37,7 @@ sub _parameters_for_type
 {
     my $self = shift;
 
-    my @p = ( $self->width(), $self->dot_size(), $self->color(), $self->opacity() );
+    my @p = ( $self->width(), $self->dot_size(), $self->opacity(), $self->color() );
 
     push @p, ( $self->label(), $self->text_size() )
         if $self->_has_label();
@@ -48,6 +49,7 @@ sub _parameters_for_type
 }
 
 no Moose;
+
 __PACKAGE__->meta()->make_immutable();
 
 1;

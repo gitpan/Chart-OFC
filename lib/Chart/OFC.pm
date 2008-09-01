@@ -3,8 +3,9 @@ package Chart::OFC;
 use strict;
 use warnings;
 
-our $VERSION = '0.07';
+our $VERSION = '0.08';
 
+use Moose 0.56;
 use MooseX::StrictConstructor;
 use Chart::OFC::Types;
 
@@ -83,14 +84,20 @@ require Chart::OFC::XAxis;
 require Chart::OFC::YAxis;
 
 require Chart::OFC::Dataset::3DBar;
+require Chart::OFC::Dataset::Area;
 require Chart::OFC::Dataset::Bar;
+require Chart::OFC::Dataset::Candle;
 require Chart::OFC::Dataset::FadeBar;
 require Chart::OFC::Dataset::OutlinedBar;
 require Chart::OFC::Dataset::GlassBar;
+require Chart::OFC::Dataset::HighLowClose;
 require Chart::OFC::Dataset::Line;
 require Chart::OFC::Dataset::LineWithDots;
+require Chart::OFC::Dataset::Scatter;
+require Chart::OFC::Dataset::SketchBar;
 
 no Moose;
+
 __PACKAGE__->meta()->make_immutable();
 
 1;
@@ -107,8 +114,11 @@ Chart::OFC - Generate data files for use with Open Flash Chart
 
     use Chart::OFC; # loads all the other classes
 
-    my $data = Chart::OFC::Dataset->new( values => [ 1..10 ] );
-    my $pie = Chart::OFC::Pie->new( title => 'Pie!', dataset => $set, labels => [ 'a'..'j' ] );
+    my $set = Chart::OFC::Dataset->new( values => [ 1..10 ] );
+    my $pie = Chart::OFC::Pie->new( title   => 'Pie!',
+                                    dataset => $set,
+                                    labels  => [ 'a'..'j' ],
+                                  );
 
     print $pie->as_ofc_data();
 
