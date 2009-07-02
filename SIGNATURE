@@ -15,13 +15,13 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 a3cc7bc4852c25da839fec158002e299adbe2072 Build.PL
-SHA1 49bef2d49c2993735403b94952e0c3134f7bf34b Changes
+SHA1 baa5b901c29955145f687ec7c502269db76fc248 Changes
 SHA1 b391536af4a5c34366f022b322119d40c73e3dd4 LICENSE
 SHA1 e683b8d04b9e054583a924d4cf1c0eb7e30f0db7 MANIFEST
-SHA1 21cbdeb3f9910c81ec8d0c31e97656ccb0f9cbc3 META.yml
-SHA1 cd14ada78fb37a0d926edd86eddcdf7f939de582 Makefile.PL
-SHA1 ae44ce24022aa97972fdbd4a49d141ca9ed7744d README
-SHA1 c91eaf9ab1ee47cb1295a8b23f55e21dca950db9 lib/Chart/OFC.pm
+SHA1 08485d6db4f0d026f8e325d514eccd7d080c5c32 META.yml
+SHA1 319790c23e8ec93773a072982ab6a2f366ada3a1 Makefile.PL
+SHA1 fe36f1b8c1a5726f91792278dc9b7f69784992dc README
+SHA1 786bc4b452f29bddd222a3c16f47b4158bd33b26 lib/Chart/OFC.pm
 SHA1 599c54cbb26a5e9dbf90fa60a1d3d86fd1ce8a6e lib/Chart/OFC/Axis.pm
 SHA1 7fed8f3bf1596d2122165e76d4ed7184fe0c19ec lib/Chart/OFC/AxisLabel.pm
 SHA1 352d1d8aab2ebb484d96cabfef3446c74b79f330 lib/Chart/OFC/Dataset.pm
@@ -37,10 +37,10 @@ SHA1 4699cee83b13346f7bac752aab5cffcc428a9f4c lib/Chart/OFC/Dataset/LineWithDots
 SHA1 dd8a8092e023aec0a0178bc8bfaa3c396728d1c8 lib/Chart/OFC/Dataset/OutlinedBar.pm
 SHA1 72913580ac4063fa286dc13bd238d567539eb841 lib/Chart/OFC/Dataset/Scatter.pm
 SHA1 5f4f27b022efa8b60814e9e54044c32fe5228669 lib/Chart/OFC/Dataset/SketchBar.pm
-SHA1 d3d10344960ba7efb5fb73a4940ec268f2a51d54 lib/Chart/OFC/Grid.pm
+SHA1 9d5035d5ae9a5ac447436ea51eabdd96ac4d47e1 lib/Chart/OFC/Grid.pm
 SHA1 accaed8b0c1715f2794d94c066daff449cd1e50d lib/Chart/OFC/Pie.pm
 SHA1 174436e18696a9acd832640bf6f0f0360c94190f lib/Chart/OFC/Role/OFCDataLines.pm
-SHA1 4c648ee57619f86b48ba34d0d6e870dd71d379df lib/Chart/OFC/Types.pm
+SHA1 ed14050e69edb1603b6429f834d1ed702ce84272 lib/Chart/OFC/Types.pm
 SHA1 4daea0b71b4ef21f1fc18a1fe80c272cbcf0377c lib/Chart/OFC/XAxis.pm
 SHA1 f4fc6c7faffba046d7576df3fe8ac4c30e2682c0 lib/Chart/OFC/YAxis.pm
 SHA1 e0a9a775f4f8d0308f3057182a965f98225a9b0d ofc/LICENSE
@@ -70,9 +70,9 @@ SHA1 98c875c39bedc57bc3c52b583ddc866c6d184d0a t/perlcritic.t
 SHA1 7e6712a9238d2ddbc230e20fb86b6e691efb4ca8 t/pod-coverage.t
 SHA1 cec881e89926d320475f9de2b7fad02c2169f510 t/pod.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.6 (GNU/Linux)
+Version: GnuPG v1.4.9 (GNU/Linux)
 
-iD8DBQFIvCeI3Or3ZzQuifMRAkiQAKDZXrTgfHL6DHFk3oxYyRHK/PRudgCgoIzZ
-cvHECyyduV1iQxTYaeT1Zr0=
-=xaS6
+iEYEARECAAYFAkpMt20ACgkQIgMCsV8qvRKbRwCcDKGY7+TNdbTFPhdAeTD+ZoBN
+ao0An2KoQsPC+Kr0wKxzex8eZ0STJ4zu
+=knqD
 -----END PGP SIGNATURE-----
