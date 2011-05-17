@@ -1,9 +1,11 @@
 package Chart::OFC;
+BEGIN {
+  $Chart::OFC::VERSION = '0.10';
+}
 
 use strict;
 use warnings;
 
-our $VERSION = '0.09';
 
 use Moose 0.56;
 use MooseX::StrictConstructor;
@@ -100,13 +102,19 @@ __PACKAGE__->meta()->make_immutable();
 
 1;
 
-__END__
+# ABSTRACT: Generate data files for use with Open Flash Chart
+
+
 
 =pod
 
 =head1 NAME
 
 Chart::OFC - Generate data files for use with Open Flash Chart
+
+=head1 VERSION
+
+version 0.10
 
 =head1 SYNOPSIS
 
@@ -309,10 +317,6 @@ To donate, log into PayPal and send money to autarch@urth.org or use
 the button on this page:
 L<http://www.urth.org/~autarch/fs-donation.html>
 
-=head1 AUTHOR
-
-Dave Rolsky, C<< <autarch@urth.org> >>
-
 =head1 BUGS
 
 Please report any bugs or feature requests to
@@ -320,11 +324,20 @@ C<bug-chart-ofc@rt.cpan.org>, or through the web interface at
 L<http://rt.cpan.org>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
-=head1 COPYRIGHT & LICENSE
+=head1 AUTHOR
 
-Copyright 2007-2008 Dave Rolsky, All Rights Reserved.
+Dave Rolsky <autarch@urth.org>
 
-This program is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2011 by Dave Rolsky.
+
+This is free software, licensed under:
+
+  The Artistic License 2.0 (GPL Compatible)
 
 =cut
+
+
+__END__
+

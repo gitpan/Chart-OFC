@@ -1,4 +1,7 @@
 package Chart::OFC::Dataset::SketchBar;
+BEGIN {
+  $Chart::OFC::Dataset::SketchBar::VERSION = '0.10';
+}
 
 use strict;
 use warnings;
@@ -38,13 +41,19 @@ __PACKAGE__->meta()->make_immutable();
 
 1;
 
-__END__
+# ABSTRACT: A dataset represented as "sketch" bars
+
+
 
 =pod
 
 =head1 NAME
 
 Chart::OFC::Dataset::SketchBar - A dataset represented as "sketch" bars
+
+=head1 VERSION
+
+version 0.10
 
 =head1 SYNOPSIS
 
@@ -76,11 +85,20 @@ is. The greater it is the more random the look. The default value is 3.
 
 This class does the C<Chart::OFC::Role::OFCDataLines> role.
 
-=head1 COPYRIGHT & LICENSE
+=head1 AUTHOR
 
-Copyright 2007-2008 Dave Rolsky, All Rights Reserved.
+Dave Rolsky <autarch@urth.org>
 
-This program is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2011 by Dave Rolsky.
+
+This is free software, licensed under:
+
+  The Artistic License 2.0 (GPL Compatible)
 
 =cut
+
+
+__END__
+

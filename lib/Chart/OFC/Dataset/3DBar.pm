@@ -1,5 +1,8 @@
 # critic is on drugs, I guess
-package Chart::OFC::Dataset::3DBar; ## no critic RequireFilenameMatchesPackage
+package Chart::OFC::Dataset::3DBar;
+BEGIN {
+  $Chart::OFC::Dataset::3DBar::VERSION = '0.10';
+} ## no critic RequireFilenameMatchesPackage
 
 use strict;
 use warnings;
@@ -22,13 +25,19 @@ __PACKAGE__->meta()->make_immutable();
 1;
 
 
-__END__
+# ABSTRACT: A dataset represented as 3D bars
+
+
 
 =pod
 
 =head1 NAME
 
 Chart::OFC::Dataset::3DBar - A dataset represented as 3D bars
+
+=head1 VERSION
+
+version 0.10
 
 =head1 SYNOPSIS
 
@@ -53,11 +62,20 @@ all of that class's attributes. It has no attributes of its own.
 
 This class does the C<Chart::OFC::Role::OFCDataLines> role.
 
-=head1 COPYRIGHT & LICENSE
+=head1 AUTHOR
 
-Copyright 2007-2008 Dave Rolsky, All Rights Reserved.
+Dave Rolsky <autarch@urth.org>
 
-This program is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2011 by Dave Rolsky.
+
+This is free software, licensed under:
+
+  The Artistic License 2.0 (GPL Compatible)
 
 =cut
+
+
+__END__
+

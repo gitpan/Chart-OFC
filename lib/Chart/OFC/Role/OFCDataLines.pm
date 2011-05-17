@@ -1,4 +1,7 @@
 package Chart::OFC::Role::OFCDataLines;
+BEGIN {
+  $Chart::OFC::Role::OFCDataLines::VERSION = '0.10';
+}
 
 use strict;
 use warnings;
@@ -57,13 +60,19 @@ no Moose::Role;
 
 1;
 
-__END__
+# ABSTRACT: helper for classes which generate OFC data
+
+
 
 =pod
 
 =head1 NAME
 
 Chart::OFC::Role::OFCDataLines - helper for classes which generate OFC data
+
+=head1 VERSION
+
+version 0.10
 
 =head1 SYNOPSIS
 
@@ -78,11 +87,20 @@ Chart::OFC::Role::OFCDataLines - helper for classes which generate OFC data
 This class provides a common helper method for classes which generate
 OFC data (which is most classes in the Chart::OFC distro).
 
-=head1 COPYRIGHT & LICENSE
+=head1 AUTHOR
 
-Copyright 2007-2008 Dave Rolsky, All Rights Reserved.
+Dave Rolsky <autarch@urth.org>
 
-This program is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2011 by Dave Rolsky.
+
+This is free software, licensed under:
+
+  The Artistic License 2.0 (GPL Compatible)
 
 =cut
+
+
+__END__
+

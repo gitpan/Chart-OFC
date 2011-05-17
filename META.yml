@@ -1,66 +1,25 @@
 ---
-name: Chart-OFC
-version: 0.09
+abstract: 'Generate data files for use with Open Flash Chart'
 author:
-  - 'Dave Rolsky, C<< <autarch@urth.org> >>'
-abstract: Generate data files for use with Open Flash Chart
-license: perl
-resources:
-  license: http://dev.perl.org/licenses/
+  - 'Dave Rolsky <autarch@urth.org>'
+build_requires:
+  Test::More: 0.88
+  Test::Requires: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.200006, CPAN::Meta::Converter version 2.110440'
+license: artistic_2
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Chart-OFC
 requires:
   Graphics::ColorNames: 0
   List::MoreUtils: 0
   Moose: 0.56
   MooseX::StrictConstructor: 0.07
-build_requires:
-  Test::More: 0
-provides:
-  Chart::OFC:
-    file: lib/Chart/OFC.pm
-    version: 0.09
-  Chart::OFC::Axis:
-    file: lib/Chart/OFC/Axis.pm
-  Chart::OFC::AxisLabel:
-    file: lib/Chart/OFC/AxisLabel.pm
-  Chart::OFC::Dataset:
-    file: lib/Chart/OFC/Dataset.pm
-  Chart::OFC::Dataset::3DBar:
-    file: lib/Chart/OFC/Dataset/3DBar.pm
-  Chart::OFC::Dataset::Area:
-    file: lib/Chart/OFC/Dataset/Area.pm
-  Chart::OFC::Dataset::Bar:
-    file: lib/Chart/OFC/Dataset/Bar.pm
-  Chart::OFC::Dataset::Candle:
-    file: lib/Chart/OFC/Dataset/Candle.pm
-  Chart::OFC::Dataset::FadeBar:
-    file: lib/Chart/OFC/Dataset/FadeBar.pm
-  Chart::OFC::Dataset::GlassBar:
-    file: lib/Chart/OFC/Dataset/GlassBar.pm
-  Chart::OFC::Dataset::HighLowClose:
-    file: lib/Chart/OFC/Dataset/HighLowClose.pm
-  Chart::OFC::Dataset::Line:
-    file: lib/Chart/OFC/Dataset/Line.pm
-  Chart::OFC::Dataset::LineWithDots:
-    file: lib/Chart/OFC/Dataset/LineWithDots.pm
-  Chart::OFC::Dataset::OutlinedBar:
-    file: lib/Chart/OFC/Dataset/OutlinedBar.pm
-  Chart::OFC::Dataset::Scatter:
-    file: lib/Chart/OFC/Dataset/Scatter.pm
-  Chart::OFC::Dataset::SketchBar:
-    file: lib/Chart/OFC/Dataset/SketchBar.pm
-  Chart::OFC::Grid:
-    file: lib/Chart/OFC/Grid.pm
-  Chart::OFC::Pie:
-    file: lib/Chart/OFC/Pie.pm
-  Chart::OFC::Role::OFCDataLines:
-    file: lib/Chart/OFC/Role/OFCDataLines.pm
-  Chart::OFC::Types:
-    file: lib/Chart/OFC/Types.pm
-  Chart::OFC::XAxis:
-    file: lib/Chart/OFC/XAxis.pm
-  Chart::OFC::YAxis:
-    file: lib/Chart/OFC/YAxis.pm
-generated_by: Module::Build version 0.32
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+resources:
+  bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=Chloro
+  repository: http://hg.urth.org/hg/Chloro
+version: 0.10
