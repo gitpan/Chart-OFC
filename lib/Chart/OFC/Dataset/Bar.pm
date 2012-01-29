@@ -1,6 +1,6 @@
 package Chart::OFC::Dataset::Bar;
-BEGIN {
-  $Chart::OFC::Dataset::Bar::VERSION = '0.10';
+{
+  $Chart::OFC::Dataset::Bar::VERSION = '0.11';
 }
 
 use strict;
@@ -72,7 +72,7 @@ Chart::OFC::Dataset::Bar - A dataset represented as bars
 
 =head1 VERSION
 
-version 0.10
+version 0.11
 
 =head1 SYNOPSIS
 
@@ -133,7 +133,7 @@ Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2011 by Dave Rolsky.
+This software is Copyright (c) 2012 by Dave Rolsky.
 
 This is free software, licensed under:
 

@@ -1,6 +1,6 @@
 package Chart::OFC::YAxis;
-BEGIN {
-  $Chart::OFC::YAxis::VERSION = '0.10';
+{
+  $Chart::OFC::YAxis::VERSION = '0.11';
 }
 
 use strict;
@@ -57,7 +57,7 @@ sub _ofc_data_lines
     push @lines, $self->_data_line( 'y_ticks',
                                     $self->small_tick_size(),
                                     $self->large_tick_size(),
-                                    int( ( $self->max() + abs $self->min() ) / $self->label_steps() ),
+                                    int( ( $self->max() - $self->min() ) / $self->label_steps() ),
                                   );
 
     push @lines, $self->_data_line( 'y_min', $self->min() );
@@ -92,7 +92,7 @@ Chart::OFC::YAxis - Y axis for grid charts
 
 =head1 VERSION
 
-version 0.10
+version 0.11
 
 =head1 DESCRIPTION
 
@@ -151,7 +151,7 @@ Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2011 by Dave Rolsky.
+This software is Copyright (c) 2012 by Dave Rolsky.
 
 This is free software, licensed under:
 

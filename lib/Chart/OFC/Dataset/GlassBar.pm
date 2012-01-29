@@ -1,6 +1,6 @@
 package Chart::OFC::Dataset::GlassBar;
-BEGIN {
-  $Chart::OFC::Dataset::GlassBar::VERSION = '0.10';
+{
+  $Chart::OFC::Dataset::GlassBar::VERSION = '0.11';
 }
 
 use strict;

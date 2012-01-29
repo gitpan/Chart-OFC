@@ -1,7 +1,7 @@
 # critic is on drugs, I guess
 package Chart::OFC::Dataset::3DBar;
-BEGIN {
-  $Chart::OFC::Dataset::3DBar::VERSION = '0.10';
+{
+  $Chart::OFC::Dataset::3DBar::VERSION = '0.11';
 } ## no critic RequireFilenameMatchesPackage
 
 use strict;
@@ -37,7 +37,7 @@ Chart::OFC::Dataset::3DBar - A dataset represented as 3D bars
 
 =head1 VERSION
 
-version 0.10
+version 0.11
 
 =head1 SYNOPSIS
 
@@ -68,7 +68,7 @@ Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2011 by Dave Rolsky.
+This software is Copyright (c) 2012 by Dave Rolsky.
 
 This is free software, licensed under:
 

@@ -1,6 +1,6 @@
 package Chart::OFC::AxisLabel;
-BEGIN {
-  $Chart::OFC::AxisLabel::VERSION = '0.10';
+{
+  $Chart::OFC::AxisLabel::VERSION = '0.11';
 }
 
 use strict;
@@ -58,7 +58,7 @@ Chart::OFC::AxisLabel - A label for an axis
 
 =head1 VERSION
 
-version 0.10
+version 0.11
 
 =head1 SYNOPSIS
 
@@ -105,7 +105,7 @@ Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2011 by Dave Rolsky.
+This software is Copyright (c) 2012 by Dave Rolsky.
 
 This is free software, licensed under:
 

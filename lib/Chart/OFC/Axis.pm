@@ -1,6 +1,6 @@
 package Chart::OFC::Axis;
-BEGIN {
-  $Chart::OFC::Axis::VERSION = '0.10';
+{
+  $Chart::OFC::Axis::VERSION = '0.11';
 }
 
 use strict;
@@ -66,7 +66,7 @@ Chart::OFC::Axis - Base class for axis classes
 
 =head1 VERSION
 
-version 0.10
+version 0.11
 
 =head1 DESCRIPTION
 
@@ -123,7 +123,7 @@ Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2011 by Dave Rolsky.
+This software is Copyright (c) 2012 by Dave Rolsky.
 
 This is free software, licensed under:
 

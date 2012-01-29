@@ -1,6 +1,6 @@
 package Chart::OFC::Dataset::SketchBar;
-BEGIN {
-  $Chart::OFC::Dataset::SketchBar::VERSION = '0.10';
+{
+  $Chart::OFC::Dataset::SketchBar::VERSION = '0.11';
 }
 
 use strict;
@@ -53,7 +53,7 @@ Chart::OFC::Dataset::SketchBar - A dataset represented as "sketch" bars
 
 =head1 VERSION
 
-version 0.10
+version 0.11
 
 =head1 SYNOPSIS
 
@@ -91,7 +91,7 @@ Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2011 by Dave Rolsky.
+This software is Copyright (c) 2012 by Dave Rolsky.
 
 This is free software, licensed under:
 

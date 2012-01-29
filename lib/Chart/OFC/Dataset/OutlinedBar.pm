@@ -1,6 +1,6 @@
 package Chart::OFC::Dataset::OutlinedBar;
-BEGIN {
-  $Chart::OFC::Dataset::OutlinedBar::VERSION = '0.10';
+{
+  $Chart::OFC::Dataset::OutlinedBar::VERSION = '0.11';
 }
 
 use strict;
