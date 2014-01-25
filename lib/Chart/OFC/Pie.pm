@@ -1,8 +1,5 @@
 package Chart::OFC::Pie;
-{
-  $Chart::OFC::Pie::VERSION = '0.11';
-}
-
+$Chart::OFC::Pie::VERSION = '0.12';
 use strict;
 use warnings;
 
@@ -101,7 +98,7 @@ __PACKAGE__->meta()->make_immutable();
 
 # ABSTRACT: A pie chart
 
-
+__END__
 
 =pod
 
@@ -111,20 +108,22 @@ Chart::OFC::Pie - A pie chart
 
 =head1 VERSION
 
-version 0.11
+version 0.12
 
 =head1 SYNOPSIS
 
-  my $dataset = Chart::OFC::Dataset->new( values => [ 1 .. 5] );
-
-  my $pie = Chart::OFC::Pie->new( title   => 'My Pie Chart',
-                                  dataset => $dataset,
-                                );
+    my $dataset = Chart::OFC::Dataset->new( values => [ 1 .. 5 ] );
+    my $pie = Chart::OFC::Pie->new(
+        title   => 'My Pie Chart',
+        dataset => $dataset,
+    );
 
 =head1 DESCRIPTION
 
 This class represents a pie chart. A pie chart displays a single
 dataset as a set of pie slices.
+
+=for Pod::Coverage BUILD
 
 =head1 ATTRIBUTES
 
@@ -181,14 +180,10 @@ Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2012 by Dave Rolsky.
+This software is Copyright (c) 2014 by Dave Rolsky.
 
 This is free software, licensed under:
 
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-
-
-__END__
-

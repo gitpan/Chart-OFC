@@ -1,8 +1,5 @@
 package Chart::OFC::Dataset::Scatter;
-{
-  $Chart::OFC::Dataset::Scatter::VERSION = '0.11';
-}
-
+$Chart::OFC::Dataset::Scatter::VERSION = '0.12';
 use strict;
 use warnings;
 
@@ -50,7 +47,7 @@ __PACKAGE__->meta()->make_immutable();
 
 # ABSTRACT: A dataset represented as a scatter plot point for each value
 
-
+__END__
 
 =pod
 
@@ -60,24 +57,25 @@ Chart::OFC::Dataset::Scatter - A dataset represented as a scatter plot point for
 
 =head1 VERSION
 
-version 0.11
+version 0.12
 
 =head1 SYNOPSIS
 
-  my @numbers = ( [ 1, 2, 3 ], [ 3, 2, 1 ] );
-  my $scatter =
-      Chart::OFC::Dataset::Scatter->new
-          ( values      => \@numbers,
-            width       => 5,
-            color       => 'purple',
-            label       => 'Daily Sales in $',
-            text_size   => 12,
-            circle_size => 10,
-          );
+    my @numbers = ( [ 1, 2, 3 ], [ 3, 2, 1 ] );
+    my $scatter = Chart::OFC::Dataset::Scatter->new(
+        values      => \@numbers,
+        width       => 5,
+        color       => 'purple',
+        label       => 'Daily Sales in $',
+        text_size   => 12,
+        circle_size => 10,
+    );
 
 =head1 DESCRIPTION
 
 This class contains values to be charted as scatter points on a grid chart.
+
+=for Pod::Coverage type
 
 =head1 ATTRIBUTES
 
@@ -109,14 +107,10 @@ Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2012 by Dave Rolsky.
+This software is Copyright (c) 2014 by Dave Rolsky.
 
 This is free software, licensed under:
 
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-
-
-__END__
-

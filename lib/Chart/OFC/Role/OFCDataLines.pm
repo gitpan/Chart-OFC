@@ -1,8 +1,5 @@
 package Chart::OFC::Role::OFCDataLines;
-{
-  $Chart::OFC::Role::OFCDataLines::VERSION = '0.11';
-}
-
+$Chart::OFC::Role::OFCDataLines::VERSION = '0.12';
 use strict;
 use warnings;
 
@@ -62,7 +59,7 @@ no Moose::Role;
 
 # ABSTRACT: helper for classes which generate OFC data
 
-
+__END__
 
 =pod
 
@@ -72,15 +69,7 @@ Chart::OFC::Role::OFCDataLines - helper for classes which generate OFC data
 
 =head1 VERSION
 
-version 0.11
-
-=head1 SYNOPSIS
-
-  package Chart::OFC;
-
-  use MooseX::StrictConstructor;
-
-  with 'Chart::OFC::Role::OFCDataLines';
+version 0.12
 
 =head1 DESCRIPTION
 
@@ -93,14 +82,10 @@ Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2012 by Dave Rolsky.
+This software is Copyright (c) 2014 by Dave Rolsky.
 
 This is free software, licensed under:
 
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-
-
-__END__
-

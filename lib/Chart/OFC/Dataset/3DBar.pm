@@ -1,9 +1,6 @@
 # critic is on drugs, I guess
-package Chart::OFC::Dataset::3DBar;
-{
-  $Chart::OFC::Dataset::3DBar::VERSION = '0.11';
-} ## no critic RequireFilenameMatchesPackage
-
+package Chart::OFC::Dataset::3DBar; ## no critic RequireFilenameMatchesPackage
+$Chart::OFC::Dataset::3DBar::VERSION = '0.12';
 use strict;
 use warnings;
 
@@ -27,7 +24,7 @@ __PACKAGE__->meta()->make_immutable();
 
 # ABSTRACT: A dataset represented as 3D bars
 
-
+__END__
 
 =pod
 
@@ -37,21 +34,25 @@ Chart::OFC::Dataset::3DBar - A dataset represented as 3D bars
 
 =head1 VERSION
 
-version 0.11
+version 0.12
 
 =head1 SYNOPSIS
 
-  my $bars = Chart::OFC::Dataset::3DBar->new( values     => \@numbers,
-                                              opacity    => 60,
-                                              fill_color => 'purple',
-                                              label      => 'Daily Sales in $',
-                                              text_size  => 12,
-                                            );
+    my @numbers = (1, 2, 3);
+    my $bars    = Chart::OFC::Dataset::3DBar->new(
+        values     => \@numbers,
+        opacity    => 60,
+        fill_color => 'purple',
+        label      => 'Daily Sales in $',
+        text_size  => 12,
+    );
 
 =head1 DESCRIPTION
 
 This class contains values to be charted as bars on a grid chart. The
 bars are filled with the specified color and have a 3D look.
+
+=for Pod::Coverage type
 
 =head1 ATTRIBUTES
 
@@ -68,14 +69,10 @@ Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2012 by Dave Rolsky.
+This software is Copyright (c) 2014 by Dave Rolsky.
 
 This is free software, licensed under:
 
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-
-
-__END__
-

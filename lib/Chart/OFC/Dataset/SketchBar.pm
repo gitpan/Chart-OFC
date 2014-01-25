@@ -1,8 +1,5 @@
 package Chart::OFC::Dataset::SketchBar;
-{
-  $Chart::OFC::Dataset::SketchBar::VERSION = '0.11';
-}
-
+$Chart::OFC::Dataset::SketchBar::VERSION = '0.12';
 use strict;
 use warnings;
 
@@ -43,7 +40,7 @@ __PACKAGE__->meta()->make_immutable();
 
 # ABSTRACT: A dataset represented as "sketch" bars
 
-
+__END__
 
 =pod
 
@@ -53,23 +50,27 @@ Chart::OFC::Dataset::SketchBar - A dataset represented as "sketch" bars
 
 =head1 VERSION
 
-version 0.11
+version 0.12
 
 =head1 SYNOPSIS
 
-  my $bars = Chart::OFC::Dataset::SketchBar->new( values     => \@numbers,
-                                                  opacity    => 60,
-                                                  randomness => 5,
-                                                  fill_color => 'purple',
-                                                  label      => 'Candy totals',
-                                                  text_size  => 12,
-                                                );
+    my @numbers = (1, 2, 3);
+    my $bars    = Chart::OFC::Dataset::SketchBar->new(
+        values     => \@numbers,
+        opacity    => 60,
+        randomness => 5,
+        fill_color => 'purple',
+        label      => 'Candy totals',
+        text_size  => 12,
+    );
 
 =head1 DESCRIPTION
 
 This class contains values to be charted as bars on a grid chart. The
 bars are filled with the specified color in the style of a child's
 crayon drawing.
+
+=for Pod::Coverage type
 
 =head1 ATTRIBUTES
 
@@ -91,14 +92,10 @@ Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2012 by Dave Rolsky.
+This software is Copyright (c) 2014 by Dave Rolsky.
 
 This is free software, licensed under:
 
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-
-
-__END__
-

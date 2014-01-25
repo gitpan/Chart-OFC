@@ -1,8 +1,5 @@
 package Chart::OFC::Dataset;
-{
-  $Chart::OFC::Dataset::VERSION = '0.11';
-}
-
+$Chart::OFC::Dataset::VERSION = '0.12';
 use strict;
 use warnings;
 
@@ -71,7 +68,7 @@ __PACKAGE__->meta()->make_immutable();
 
 # ABSTRACT: A set of values to be charted
 
-
+__END__
 
 =pod
 
@@ -81,11 +78,12 @@ Chart::OFC::Dataset - A set of values to be charted
 
 =head1 VERSION
 
-version 0.11
+version 0.12
 
 =head1 SYNOPSIS
 
-  my $dataset = Chart::OFC::Dataset->new( values => \@numbers );
+    my @numbers = (1, 2, 3);
+    my $dataset = Chart::OFC::Dataset->new( values => \@numbers );
 
 =head1 DESCRIPTION
 
@@ -120,14 +118,10 @@ Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2012 by Dave Rolsky.
+This software is Copyright (c) 2014 by Dave Rolsky.
 
 This is free software, licensed under:
 
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-
-
-__END__
-

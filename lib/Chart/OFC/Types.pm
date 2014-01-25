@@ -1,8 +1,5 @@
 package Chart::OFC::Types;
-{
-  $Chart::OFC::Types::VERSION = '0.11';
-}
-
+$Chart::OFC::Types::VERSION = '0.12';
 use strict;
 use warnings;
 
@@ -120,7 +117,7 @@ subtype 'Chart::OFC::Type::PosOrZeroInt'
 subtype 'Chart::OFC::Type::Size'
     => as 'Chart::OFC::Type::PosInt';
 
-enum 'Chart::OFC::Type::Orientation' => qw( horizontal vertical diagonal );
+enum 'Chart::OFC::Type::Orientation' => [qw( horizontal vertical diagonal )];
 
 
 {
@@ -148,7 +145,7 @@ no Moose::Util::TypeConstraints;
 
 # ABSTRACT: type library for Chart::OFC
 
-
+__END__
 
 =pod
 
@@ -158,18 +155,20 @@ Chart::OFC::Types - type library for Chart::OFC
 
 =head1 VERSION
 
-version 0.11
+version 0.12
 
 =head1 SYNOPSIS
 
-  package Chart::OFC::Thingy;
+    package Chart::OFC::Thingy;
 
-  use Chart::OFC::Types;
+    use Chart::OFC::Types;
 
-  has opacity =>
-      ( is  => 'ro',
+    use Moose;
+
+    has opacity => (
+        is  => 'ro',
         isa => 'Chart::OFC::Type::Opacity',
-      );
+    );
 
 =head1 DESCRIPTION
 
@@ -182,14 +181,10 @@ Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2012 by Dave Rolsky.
+This software is Copyright (c) 2014 by Dave Rolsky.
 
 This is free software, licensed under:
 
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-
-
-__END__
-

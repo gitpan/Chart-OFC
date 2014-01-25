@@ -1,8 +1,5 @@
 package Chart::OFC::YAxis;
-{
-  $Chart::OFC::YAxis::VERSION = '0.11';
-}
-
+$Chart::OFC::YAxis::VERSION = '0.12';
 use strict;
 use warnings;
 
@@ -82,7 +79,7 @@ __PACKAGE__->meta()->make_immutable();
 
 # ABSTRACT: Y axis for grid charts
 
-
+__END__
 
 =pod
 
@@ -92,7 +89,7 @@ Chart::OFC::YAxis - Y axis for grid charts
 
 =head1 VERSION
 
-version 0.11
+version 0.12
 
 =head1 DESCRIPTION
 
@@ -151,14 +148,10 @@ Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2012 by Dave Rolsky.
+This software is Copyright (c) 2014 by Dave Rolsky.
 
 This is free software, licensed under:
 
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-
-
-__END__
-

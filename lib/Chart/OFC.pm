@@ -1,8 +1,5 @@
 package Chart::OFC;
-{
-  $Chart::OFC::VERSION = '0.11';
-}
-
+$Chart::OFC::VERSION = '0.12';
 use strict;
 use warnings;
 
@@ -104,7 +101,7 @@ __PACKAGE__->meta()->make_immutable();
 
 # ABSTRACT: Generate data files for use with Open Flash Chart
 
-
+__END__
 
 =pod
 
@@ -114,21 +111,25 @@ Chart::OFC - Generate data files for use with Open Flash Chart
 
 =head1 VERSION
 
-version 0.11
+version 0.12
 
 =head1 SYNOPSIS
 
-    use Chart::OFC; # loads all the other classes
+    use Chart::OFC;    # loads all the other classes
 
-    my $set = Chart::OFC::Dataset->new( values => [ 1..10 ] );
-    my $pie = Chart::OFC::Pie->new( title   => 'Pie!',
-                                    dataset => $set,
-                                    labels  => [ 'a'..'j' ],
-                                  );
+    my $set = Chart::OFC::Dataset->new( values => [ 1 .. 10 ] );
+    my $pie = Chart::OFC::Pie->new(
+        title   => 'Pie!',
+        dataset => $set,
+        labels  => [ 'a' .. 'j' ],
+    );
 
     print $pie->as_ofc_data();
 
 =head1 DESCRIPTION
+
+B<NOTE: You probably want to use L<Chart::OFC2> instead, or maybe just use
+some client-side JS library and skip the flash entirely.>
 
 This class lets you generate data for the Open Flash Chart
 library. OFC produces very attractive charts, but it's data format is
@@ -330,14 +331,10 @@ Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2012 by Dave Rolsky.
+This software is Copyright (c) 2014 by Dave Rolsky.
 
 This is free software, licensed under:
 
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-
-
-__END__
-

@@ -1,8 +1,5 @@
 package Chart::OFC::Grid;
-{
-  $Chart::OFC::Grid::VERSION = '0.11';
-}
-
+$Chart::OFC::Grid::VERSION = '0.12';
 use strict;
 use warnings;
 
@@ -105,7 +102,7 @@ __PACKAGE__->meta()->make_immutable();
 
 # ABSTRACT: A grid chart
 
-
+__END__
 
 =pod
 
@@ -115,21 +112,26 @@ Chart::OFC::Grid - A grid chart
 
 =head1 VERSION
 
-version 0.11
+version 0.12
 
 =head1 SYNOPSIS
 
-  my $bars = Chart::OFC::Dataset::Bar->new( values => [ 1 .. 5] );
-  my $line = Chart::OFC::Dataset::Line->new( values => [ 2 .. 7] );
+    my $bars = Chart::OFC::Dataset::Bar->new( values => [ 1 .. 5 ] );
+    my $line = Chart::OFC::Dataset::Line->new( values => [ 2 .. 7 ] );
 
-  my $x_axis = Chart::OFC::XAxis->new( axis_label => 'X Axis' );
-  my $y_axis = Chart::OFC::YAxis->new( axis_label => 'Y Axis', max => 10, label_steps => 2 );
+    my $x_axis = Chart::OFC::XAxis->new( axis_label => 'X Axis' );
+    my $y_axis = Chart::OFC::YAxis->new(
+        axis_label  => 'Y Axis',
+        max         => 10,
+        label_steps => 2
+    );
 
-  my $grid = Chart::OFC::Grid->new( title    => 'My Grid Chart',
-                                    datasets => [ $bars, $line ],
-                                    x_axis   => $x_axis,
-                                    y_axis   => $y_axis,
-                                  );
+    my $grid = Chart::OFC::Grid->new(
+        title    => 'My Grid Chart',
+        datasets => [ $bars, $line ],
+        x_axis   => $x_axis,
+        y_axis   => $y_axis,
+    );
 
 =head1 DESCRIPTION
 
@@ -137,6 +139,8 @@ This class represents a grid chart. A grid chart can contain any
 combination of bars, lines, and area lines.
 
 It also has an X and a Y axis.
+
+=for Pod::Coverage BUILD
 
 =head1 ATTRIBUTES
 
@@ -197,14 +201,10 @@ Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2012 by Dave Rolsky.
+This software is Copyright (c) 2014 by Dave Rolsky.
 
 This is free software, licensed under:
 
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-
-
-__END__
-

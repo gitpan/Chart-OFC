@@ -1,8 +1,5 @@
 package Chart::OFC::Dataset::HighLowClose;
-{
-  $Chart::OFC::Dataset::HighLowClose::VERSION = '0.11';
-}
-
+$Chart::OFC::Dataset::HighLowClose::VERSION = '0.12';
 use strict;
 use warnings;
 
@@ -50,7 +47,7 @@ __PACKAGE__->meta()->make_immutable();
 
 # ABSTRACT: A dataset represented as an hlc line for each value
 
-
+__END__
 
 =pod
 
@@ -60,25 +57,25 @@ Chart::OFC::Dataset::HighLowClose - A dataset represented as an hlc line for eac
 
 =head1 VERSION
 
-version 0.11
+version 0.12
 
 =head1 SYNOPSIS
 
-  my @numbers = ( [ 1, 2, 3 ], [ 3, 2, 1 ] );
-
-  my $hlc =
-      Chart::OFC::Dataset::HighLowClose->new
-          ( values    => \@numbers,
-            width     => 5,
-            color     => 'purple',
-            label     => 'Daily Sales in $',
-            text_size => 12,
-            opacity   => 80,
-          );
+    my @numbers = ( [ 1, 2, 3 ], [ 3, 2, 1 ] );
+    my $hlc = Chart::OFC::Dataset::HighLowClose->new(
+        values    => \@numbers,
+        width     => 5,
+        color     => 'purple',
+        label     => 'Daily Sales in $',
+        text_size => 12,
+        opacity   => 80,
+    );
 
 =head1 DESCRIPTION
 
 This class contains values to be charted as High-Low-Close points on a grid chart.
+
+=for Pod::Coverage type
 
 =head1 ATTRIBUTES
 
@@ -93,7 +90,7 @@ that class's attributes as well as its own.
 This dataset accepts an arrayref which in turn contains one or more
 array references, each of which contains a set of values.
 
-=head2 opactiy
+=head2 opacity
 
 Sets the opacity of the line.
 
@@ -109,14 +106,10 @@ Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2012 by Dave Rolsky.
+This software is Copyright (c) 2014 by Dave Rolsky.
 
 This is free software, licensed under:
 
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-
-
-__END__
-

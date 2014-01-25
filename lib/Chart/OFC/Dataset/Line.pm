@@ -1,8 +1,5 @@
 package Chart::OFC::Dataset::Line;
-{
-  $Chart::OFC::Dataset::Line::VERSION = '0.11';
-}
-
+$Chart::OFC::Dataset::Line::VERSION = '0.12';
 use strict;
 use warnings;
 
@@ -70,7 +67,7 @@ __PACKAGE__->meta()->make_immutable();
 
 # ABSTRACT: A dataset represented as a line
 
-
+__END__
 
 =pod
 
@@ -80,20 +77,24 @@ Chart::OFC::Dataset::Line - A dataset represented as a line
 
 =head1 VERSION
 
-version 0.11
+version 0.12
 
 =head1 SYNOPSIS
 
-  my $line = Chart::OFC::Dataset::Line->new( values     => \@numbers,
-                                             width      => 5,
-                                             color      => 'purple',
-                                             label      => 'Daily Sales in $',
-                                             text_size  => 12,
-                                           );
+    my @numbers = (1, 2, 3);
+    my $line    = Chart::OFC::Dataset::Line->new(
+        values    => \@numbers,
+        width     => 5,
+        color     => 'purple',
+        label     => 'Daily Sales in $',
+        text_size => 12,
+    );
 
 =head1 DESCRIPTION
 
 This class contains values to be charted as a line on a grid chart.
+
+=for Pod::Coverage type
 
 =head1 ATTRIBUTES
 
@@ -147,14 +148,10 @@ Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2012 by Dave Rolsky.
+This software is Copyright (c) 2014 by Dave Rolsky.
 
 This is free software, licensed under:
 
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-
-
-__END__
-
